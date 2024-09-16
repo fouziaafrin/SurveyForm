@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department Survey - Jahangirnagar University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">CSE Department Survey</h1>
+        <p id="description">We value your feedback to improve the quality of education and facilities at the CSE Department of Jahangirnagar University.</p>
+        
+        <form id="survey-form">
+            <!-- Basic Information Section -->
+            <fieldset>
+                <legend>Basic Information</legend>
+                
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                
+                <label id="number-label" for="age">Year of Study:</label>
+                <input id="number" type="number" name="year" min="1" max="4" placeholder="Enter your current year of study" required>
+            </fieldset>
+        
+            <!-- Education Satisfaction Section -->
+            <fieldset>
+                <legend>Education Satisfaction</legend>
+        
+                <label for="education-quality">How satisfied are you with the quality of education in the CSE Department?</label>
+                <select id="dropdown" name="education-quality" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="very-satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very-dissatisfied">Very Dissatisfied</option>
+                </select>
+            </fieldset>
+        
+            <!-- Rating Section -->
+            <fieldset>
+                <legend>Rate the Following Aspects:</legend>
+                
+                <label>Faculty Performance:</label>
+                <label><input type="radio" name="faculty-performance" value="excellent"> Excellent</label>
+                <label><input type="radio" name="faculty-performance" value="good"> Good</label>
+                <label><input type="radio" name="faculty-performance" value="average"> Average</label>
+                <label><input type="radio" name="faculty-performance" value="poor"> Poor</label>
+        
+                <label>Lab Facilities:</label>
+                <label><input type="radio" name="lab-facilities" value="excellent"> Excellent</label>
+                <label><input type="radio" name="lab-facilities" value="good"> Good</label>
+                <label><input type="radio" name="lab-facilities" value="average"> Average</label>
+                <label><input type="radio" name="lab-facilities" value="poor"> Poor</label>
+            </fieldset>
+        
+            <!-- Suggestions Section -->
+            <fieldset>
+                <legend>Suggestions for Improvement</legend>
+                
+                <label><input type="checkbox" name="improvement" value="faculty"> Faculty Performance</label>
+                <label><input type="checkbox" name="improvement" value="labs"> Lab Facilities</label>
+                <label><input type="checkbox" name="improvement" value="infrastructure"> Infrastructure</label>
+                <label><input type="checkbox" name="improvement" value="course-materials"> Course Materials</label>
+                <label><input type="checkbox" name="improvement" value="student-support"> Student Support</label>
+                
+                <p>Any other comments or suggestions?</p>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+            </fieldset>
+        
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2024 Jahangirnagar University, Department of CSE. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:cse@juniv.edu">cse@juniv.edu</a></p>
+        </footer>
+        
+    </div>
+</body>
+</html>
